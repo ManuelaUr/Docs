@@ -7,14 +7,15 @@ Main goals for Release 3 (R3) were user federation, increase in deployment and u
 velocity by improving automated test coverage as well as bringing disk encryption based on
 tang from the state of a technical preview to be fully supported.
 
-## Component Versions and User-visible improvements (highlights)
+## Component Versions and User-visible Improvements (Highlights)
 
 * We support the latest [Kubernetes 1.25](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.25.md)
   releases.
 * The Kubernetes Cluster API is now available in a stable v1beta1
   [release 1.2.x](https://github.com/kubernetes-sigs/cluster-api/releases)
   with the corresponding [cluster-api-provider-openstack 0.6.x](https://github.com/kubernetes-sigs/cluster-api/releases).
-* The [Kubernetes Cluster API cluster management service](https://github.com/SovereignCloudStack/k8s-cluster-api-provider/)
+* The [Kubernetes Cluster API cluster management service]
+  (https://github.com/SovereignCloudStack/k8s-cluster-api-provider/)
   has seen major managability improvements.
   Please consult the
   [k8s cluster api provider release notes](https://github.com/SovereignCloudStack/k8s-cluster-api-provider/blob/main/Release-Notes-R3.md)
@@ -33,7 +34,7 @@ tang from the state of a technical preview to be fully supported.
 
 * Work is underway to supersede [openstack-health-monitor](https://github.com/SovereignCloudStack/openstack-health-monitor)
   with a comprehensive approach using scenarios with ansible playbooks
-  that has been developed and used by T-Systems for their Open Telekom Cloud.
+  that have been developed and used by T-Systems for their Open Telekom Cloud.
   Meanwhile, openstack-health-monitor has seen the addition of data
   collection with telegraf and influxdb as well as a good dashboard
   with grafana.
@@ -50,7 +51,7 @@ tang from the state of a technical preview to be fully supported.
   Gaia-X Hackathon #4, we have worked on a demonstrator that characterizes some
   aspects of an OpenStack-based IaaS platform and which produces self-descriptions
   that can be submitted to the Gaia-X trust service, pass the tests and you can
-  be awared a verifiable credential. Code is available in the
+  be awarded a verifiable credential. Code is available in the
   [gx-self-description-generator repo](https://github.com/SovereignCloudStack/gx-self-description-generator)
 
 ### SCS Developer focused improvements (testbed and k8s cluster management)
@@ -81,7 +82,7 @@ for a complete SBOM. This allows to e.g. investigate the contents of the
 used (v4.0.0) images.
 
 
-## Upgrade/Migration notes
+## Upgrade/Migration Notes
 
 ### Cluster Management
 
@@ -106,7 +107,7 @@ your cluster management and the workload clusters.
 ## Removals
 
 * The Cockpit service has been removed.
-* All osism- scripts on the manager are deprecated and will be replaced by the new OSISM CLI. The scripts will be removed in the next release
+* All osism-scripts on the manager are deprecated and will be replaced by the new OSISM CLI. The scripts will be removed in the next release.
 
 ## Deprecations
 
@@ -117,19 +118,16 @@ Deprecations happen according to our [deprecation policy](https://github.com/Sov
 * Debian dropped hddtemp (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1002484),
   therefore the ``hddtemp`` service will be removed from the next OSISM release, as there is
   no package available for Ubuntu 22.04.
-* Heat will no longer be offered by default in the testbed in the future
+* Heat will no longer be offered by default in the testbed in the future.
 * The following services are currently not used and are deprecated and scheduled for removal as of now: Falco, Jenkins, Rundeck, Lynis, Trivy
 * The docker-compose CLI will be removed and replaced by the new compose plugin for Docker.
-docker-compose is then no longer available and docker compose must be used instead
+docker-compose is then no longer available and docker compose must be used instead.
 * The ``cleanup-elasticsearch`` playbook is deprecated. In the future,
   the ``elasticsearch-curator`` service (part of Kolla) has to be used
   for Elasticsearch cleanup.
 
 ## Security Fixes
 
-No severe security issues need to be highlighted since Release 2. However, by updating to the latest stable version of 
-the integrated open source components, we benefit from the upstream security fixes and thus recommend to upgrade all
-SCS environments. Please note that Release 2 maintenance by the SCS project team will end by the end of October.
 
 ## Resolved Issues
 
@@ -193,7 +191,7 @@ Have a look at our [How to contribute page](https://scs.community/contribute/).
 
 The work for R3 has been done by many contributors from our community.
 We have not collected detailed stats that would split out the individual contributor's
-and companies shares ... we may do so in the future. We are grateful to have such an
+and companies' shares ... we may do so in the future. We are grateful to have such an
 active and engaged community that has done so much work! Thanks to our contributors!
 
 Of course we are leveraging a huge amount of open source technology that has been
